@@ -195,6 +195,7 @@ class Course {
     }
 }
 
+
 class Book {
     private String title = "Effective Java";
     private String author = "Joshua Bloch";
