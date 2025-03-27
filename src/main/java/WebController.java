@@ -176,33 +176,30 @@ public class WebController {
 }
 
 class Teacher {
-    private String name = "Mr. Smith";
-    private String subject = "Mathematics";
-
     @GetMapping("/teacher")
     public String getTeacher() {
+        String subject = "Mathematics";
+        String name = "Mr. Smith";
         return "Teacher: " + name + ", Subject: " + subject;
     }
 }
 
 class Course {
-    private String title = "Java Programming";
-    private int duration = 40;
-
     @GetMapping("/course")
     public String getCourse() {
+        String title = "Java Programming";
+        int duration = 40;
         return "Course: " + title + ", Duration: " + duration + " hours";
     }
 }
 
 
 class Book {
-    private String title = "Effective Java";
-    private String author = "Joshua Bloch";
-    private double price = 45.99;
-
     @GetMapping("/book")
     public String getBook() {
+        String title = "Effective Java";
+        String author = "Joshua Bloch";
+        double price = 45.99;
         return "Book: " + title + ", Author: " + author + ", Price: $" + price;
     }
 }
